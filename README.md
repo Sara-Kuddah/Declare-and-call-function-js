@@ -9,7 +9,7 @@ By the end of this, developers should be able to:
 - Understand the benefits of using Functions
 - Declare And Call JavaScript Functions
 - Define parameters and pass arguments
-- Use return values
+
 
 ## Preparation
 
