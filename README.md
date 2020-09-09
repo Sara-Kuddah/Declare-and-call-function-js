@@ -6,7 +6,8 @@
 
 By the end of this, developers should be able to:
 
-- Create and invoke functions
+- Understand the benefits of using Functions
+- Declare And Call JavaScript Functions
 - Define parameters and pass arguments
 - Use return values
 
@@ -19,8 +20,15 @@ By the end of this, developers should be able to:
 
 `Function` holds encapsulated executable code.
 
+## Why do we use functions?
+
+- Avoid repetition of codes.
+- Increases program readability.
+- Divide a complex problem into simpler ones.
+
 Basic syntax:
 ```js
+function name () {}
 const code = function () {}
 ```
 
@@ -29,15 +37,16 @@ const code = function () {}
 Let's write a function that will print a message for us!
 
 ```js
-// define function
-const printHelloWorld = function () {
-  console.log('Hello World!');
+// declare function
+function printHelloWorld () {
+console.log('Hello World!');
 }
 
-// invoke function
+
+// call function
 printHelloWorld();
 
-// invoke function as many times as we want
+// call function as many times as we want
 printHelloWorld();
 printHelloWorld();
 printHelloWorld();
@@ -47,35 +56,34 @@ printHelloWorld();
 We can make our functions more useful by passing data into them.
 
 ```js
-// define function
-const printHello = function (name) {
-  console.log('Hello ' + name)
+// declare function
+function printHello (name){
+console.log('Hello ' + name)
 }
 
-// invoke function
-printHello("World");
+// call function
+printHello("GA");
 
 // invoke function as many times as we want
-printHello("World");
-printHello("Usman");
-printHello("Mohammad");
-printHello("Hisham");
-printHello("Sager");
+printHello("Hamza");
+printHello("Sara");
+printHello("Genius");
+
 ```
 
-When we define a function that accepts data, we call the key word that will represent the data a `parameter`.
+When we declare a function that accepts data, we call the key word that will represent the data a `parameter`.
 
 ```js
-const myFunctionName = function(parameterName){
-  console.log(parameterName);
+function myFunctionName (parameterName) {
+console.log(parameterName);
 }
 ```
 
 When we pass the data into our function invocation, we call it an `argument`.
 
 ```js
-const myFunctionName = function(parameterName){
-  console.log(parameterName);
+function myFunctionName (parameterName) {
+console.log(parameterName);
 }
 
 // arguments can be any data type
